@@ -1,4 +1,4 @@
-package com.example.metafit
+package com.metaf.metafit
 
 import io.flutter.embedding.android.FlutterActivity
 
