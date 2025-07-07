@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "587569767857",
+    "project_id": "metafit-e277d",
+    "storage_bucket": "metafit-e277d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:587569767857:android:c9b3dff938b877f64ac990",
+        "android_client_info": {
+          "package_name": "com.metaf.metafit"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJW5bEM0niZAFSJ1Mux8Kl91PuTJCMp7c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
