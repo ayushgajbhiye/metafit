@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => const SplashScreen(),
         '/login': (context) => const LoginScreen(),
-        '/signup': (context) => const SignUpScreen(),
+        '/signup': (context) => const SignUpScreen(title: 'metafit',),
       },
     );
   }
