@@ -12,7 +12,20 @@
           "package_name": "com.metaf.metafit"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "587569767857-elsfb5fnqljesfocpjr87nshofgs69h6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.metaf.metafit",
+            "certificate_hash": "34e0ddb85ac5c2031f4051a86bb3cf66db20427e"
+          }
+        },
+        {
+          "client_id": "587569767857-40n50uekiojpbgjsr7cdcfopr7mrs9mi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyDJW5bEM0niZAFSJ1Mux8Kl91PuTJCMp7c"
@@ -20,7 +33,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "587569767857-40n50uekiojpbgjsr7cdcfopr7mrs9mi.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "587569767857-8vseb0pud9f4ce1oc3vuaarrrm66gin8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.metaf.metafit"
+              }
+            }
+          ]
         }
       }
     }
