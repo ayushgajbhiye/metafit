@@ -17,6 +17,7 @@ class _BmiInputScreenState extends State<BmiInputScreen> {
   void _calculateBMI() {
     final double height = double.tryParse(_heightController.text) ?? 0;
     final double weight = double.tryParse(_weightController.text) ?? 0;
+
     if (height <= 0 || weight <= 0) {
       setState(() {
         _bmiResult = "Please enter valid values";
@@ -33,8 +34,15 @@ class _BmiInputScreenState extends State<BmiInputScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white, // Ensure visibility
       appBar: AppBar(
-        title: const Text('Enter Your Details'),
+        title: const Text(
+          'Enter Your Details',
+          style: TextStyle(
+            fontFamily: 'Poppins', // Ensure this matches pubspec.yaml
+            fontWeight: FontWeight.w600,
+          ),
+        ),
         centerTitle: true,
         actions: [
           IconButton(
@@ -53,7 +61,7 @@ class _BmiInputScreenState extends State<BmiInputScreen> {
         ],
       ),
       body: Padding(
-        padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(20.0),
         child: Column(
           children: [
             TextField(
@@ -61,6 +69,9 @@ class _BmiInputScreenState extends State<BmiInputScreen> {
               keyboardType: TextInputType.number,
               decoration: const InputDecoration(
                 labelText: 'Height (cm)',
+                labelStyle: TextStyle(
+                  fontFamily: 'Poppins',
+                ),
               ),
             ),
             const SizedBox(height: 16),
@@ -69,17 +80,33 @@ class _BmiInputScreenState extends State<BmiInputScreen> {
               keyboardType: TextInputType.number,
               decoration: const InputDecoration(
                 labelText: 'Weight (kg)',
+                labelStyle: TextStyle(
+                  fontFamily: 'Poppins',
+                ),
               ),
             ),
             const SizedBox(height: 32),
             ElevatedButton(
               onPressed: _calculateBMI,
-              child: const Text('Calculate BMI'),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.blueAccent,
+                padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+              ),
+              child: const Text(
+                'Calculate BMI',
+                style: TextStyle(
+                  fontFamily: 'Poppins',
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
             ),
             const SizedBox(height: 16),
             Text(
               _bmiResult,
-              style: const TextStyle(fontSize: 18),
+              style: const TextStyle(
+                fontSize: 18,
+                fontFamily: 'Poppins',
+              ),
             ),
           ],
         ),
